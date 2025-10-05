@@ -11,7 +11,9 @@ body {
 
 /* Add styles here! */
 .max-width-wrapper {
-  margin-left: 19%;
+  max-width: 800px;
+  margin-inline: auto;
+  padding-inline: 24px;
 }
 
 .max-width-wrapper p {
@@ -24,11 +26,6 @@ body {
   margin-top: 96px;
   margin-bottom: 64px;
   max-width: 447px;
-}
-
-.intro-chunk,
-.card {
-  padding-inline: 24px;
 }
 
 .intro-chunk .title {
@@ -44,31 +41,22 @@ body {
 .card {
   margin-top: 72px;
   background-color: hsla(0, 0%, 100%, 1);
-  padding: 8px 24px 24px 24px;
-  max-width: 62%;
+  padding: 24px;
   border-bottom: 5px solid hsl(0deg, 0%, 60%);
+  margin-inline: -24px;
 }
 
 .card .indented-heading {
   font-size: 1.5rem;
   background-color: hsla(45, 100%, 50%, 1);
   padding: 16px 32px;
-  margin: 0px 0px 0px -32px;
+  margin: -16px 0px 0px -32px;
   width: fit-content;
-  border-bottom: 5px solid hsl(45deg, 100%, 40%);
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
 }
 
 main {
   background-color: hsl(0deg, 0%, 40%);
   height: 100%;
-  border-top: 5px solid hsl(0deg, 0%, 60%);
-}
-
-@media (max-width: 768px) {
-  .max-width-wrapper {
-    margin-left: 0;
-  }
-  .card {
-    max-width: fit-content;
-  }
+  border-top: 8px solid hsl(0deg, 0%, 60%);
 }
